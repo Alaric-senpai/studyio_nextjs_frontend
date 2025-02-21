@@ -1,11 +1,11 @@
-import { PIeChartComponent } from "@/components/charts/pie"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Book, Users, Calendar, Bell } from "lucide-react"
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Book, Users, Calendar, Bell } from 'lucide-react'
+import React from 'react'
 
-export default function TeacherDash() {
+const AdminDashboard = () => {
   return (
     <div className="space-y-6 p-6">
-      <h1 className="text-3xl font-bold text-base-600">Welcome, Teacher</h1>
+      <h1 className="text-3xl font-bold text-base-600">Welcome, Admin</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <Card>
@@ -49,12 +49,8 @@ export default function TeacherDash() {
           </CardContent>
         </Card>
       </div>
-
-      <div className="my-3">
-        <PIeChartComponent />
-      </div>
     </div>
-
   )
 }
 
+export default AdminDashboard

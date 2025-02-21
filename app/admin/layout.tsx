@@ -4,11 +4,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import type React from "react"
 
-export default function TeachersLayout({ children }: { children: React.ReactNode }) {
+export default function AdminsLayout({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider>
       <div className="flex h-screen w-screen">
-        <AppSidebar role="TEACHER" />
+        <AppSidebar role="ADMIN" />
         <div className="flex-1 flex flex-col">
           <header className="flex items-center justify-between px-4 py-3 border-b border-base-300  bg-theming dark:bg-custom-blue-midnight dark:border-custom-blue-midnight">
             <SidebarTrigger />
